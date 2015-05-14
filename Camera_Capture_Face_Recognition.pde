@@ -67,7 +67,7 @@ void setup() {
 }
 
 void draw() {
-  
+   
   
   if (cam.available() == true) {
     cam.read();
@@ -110,7 +110,11 @@ void draw() {
     
     //println(faces[i].getMatches());
 
+    
     // We could also get Age, Gender, Smiling, Glasses, and Eyes Closed data like in the FaceDetect example
+    fill(255);
+    rect(width-width/4, height/2, height, width);
+    fill(0);
     text(display, width-width/3, height/3);
 
   }
